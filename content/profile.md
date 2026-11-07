@@ -1,8 +1,8 @@
 ---
 name: Jonas Bergmann-Rowe
 pronouns: they/them
-title: Researcher in social epidemiology & health psychology
-tagline: Jonas Bergmann-Rowe — early-career researcher working on mental health, HIV, patient-generated health data and AI-aided systematic review.
+title: Medical psychology researcher in social psychiatry & community health
+tagline: "Jonas Bergmann-Rowe, medical psychology researcher in social psychiatry and community health: hormones and psychiatric vulnerability, youth crisis care, HIV and chemsex, and evidence synthesis."
 affiliations:
   - Utrecht University
   - UMC Utrecht
@@ -88,10 +88,14 @@ memberships:
     start: "2026"
 ---
 
-I'm an early-career researcher who loves connecting the dots — between disciplines, data, and real-world impact. My work sits at the intersection of social epidemiology, psychopathology and bio-psycho-social health, blending quantitative research with clinically meaningful applications.
+I'm a researcher in medical psychology working at the intersection of social psychiatry and community health. I study how biological, psychological and social factors interact to shape psychiatric symptoms, and how care can reach the people who need it most.
 
-At Utrecht University I work with the [ASReview](https://asreview.nl) team on the EU project **IHI IMPROVE**, where we use AI-aided systematic reviewing to build a knowledge base of patient-generated health data (PGHD). At UMC Utrecht I evaluate intensive home treatment for young people in psychiatric crisis, and I previously coordinated *Better Wave than Worry*, an interdisciplinary community on early warning signals spanning genetics, photonics, veterinary science and One Health.
+At Utrecht University I coordinate the HPA (Hormonal Pain Anticipation) project, which looks at how hormonal fluctuations across the menstrual cycle relate to symptomatology and psychiatric vulnerability. At UMC Utrecht I'm evaluating Intensive Home Treatment for young people in acute psychiatric crisis, combining clinical data with the experiences of young people and their families.
 
-My earlier research looked at psychiatric morbidity among young adults living with HIV — how stigma, health literacy and socioeconomic position interact to shape mental health and resilience. I'm motivated by research that doesn't just produce data, but informs interventions, policy and care, especially for marginalised communities.
+In London I'm starting two research placements. At King's College London's Faculty of Life Sciences & Medicine I'll work on chemsex and HIV, and at 56 Dean Street, part of Chelsea and Westminster Hospital NHS Foundation Trust, I'll focus on mental health in HIV care.
 
-If you're working on health, early detection, patient-generated data or new approaches to complex problems, I'd love to hear from you.
+My community health work began as a residential intern at Samyak, a psychiatric and addiction hospital in Pune, India, where I supported inpatient and outpatient care and led psychoeducation workshops. At MenAsWell in Amsterdam I research psychosocial interventions for survivors of sexual and intimate-partner violence.
+
+I also work in meta-science and evidence synthesis. With the [ASReview](https://asreview.nl) team at Utrecht University I lead Work Package 2 of the EU-funded **IHI IMPROVE** project, a collaboration between academia and industry that uses AI-aided systematic reviewing to map evidence on patient-generated health data across 11 disease areas, including cardiology, neurology and ophthalmology.
+
+Interdisciplinary work is what drives me. I'm always open to collaborations that strengthen patient-outcome research and help develop transdiagnostic treatments that take both physical and mental health into account.
