@@ -83,13 +83,14 @@ h3 { font-size: 1.1rem; margin: 0; }
 /* ---- Section nav ---- */
 
 .toc {
-  position: sticky; top: 0; z-index: 5; display: flex; gap: 1.25rem; overflow-x: auto;
-  padding-top: 0.75rem; padding-bottom: 0.75rem; background: var(--bg); border-bottom: 1px solid var(--line);
+  position: sticky; top: 0; z-index: 5; display: flex; gap: 1.75rem; overflow-x: auto;
+  padding-top: 1rem; padding-bottom: 1rem; background: var(--bg); border-bottom: 1px solid var(--line);
 }
-.toc a { color: var(--muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; white-space: nowrap; }
+.toc a { color: var(--muted); text-decoration: none; font-size: 1.15rem; font-weight: 500; white-space: nowrap; }
 .toc a:hover { color: var(--fg); }
+@media (max-width: 600px) { .toc { flex-wrap: wrap; gap: 0.5rem 1.25rem; } main section { scroll-margin-top: 6.5rem; } }
 
-main section { padding: 3rem 0 1rem; scroll-margin-top: 3rem; }
+main section { padding: 3rem 0 1rem; scroll-margin-top: 4rem; }
 
 .prose { max-width: 42rem; }
 .prose p { margin: 0 0 1rem; }

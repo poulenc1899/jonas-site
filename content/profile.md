@@ -15,14 +15,7 @@ email: ""
 also_published_as:
   - Jonas Bergmann
 links: []
-interests:
-  - Social epidemiology
-  - Psychopathology
-  - HIV & mental health
-  - Symptom network analysis
-  - Patient-generated health data
-  - AI-aided systematic review
-  - Early warning signals
+interests: []
 positions:
   - role: Research Assistant (internship)
     org: Chelsea and Westminster Hospital NHS Foundation Trust
