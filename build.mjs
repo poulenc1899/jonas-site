@@ -89,6 +89,10 @@ const talks = readCollection('talks')
   .map((t) => ({ ...t, date: parseDate(t.date) }))
   .sort((a, b) => b.date.sort.localeCompare(a.date.sort));
 
+const posts = readCollection('posts')
+  .map((b) => ({ ...b, date: parseDate(b.date) }))
+  .sort((a, b) => b.date.sort.localeCompare(a.date.sort));
+
 // ---------- OpenAlex + citation lookups (cached) ----------
 
 const cache = fs.existsSync(CACHE_FILE) ? JSON.parse(fs.readFileSync(CACHE_FILE, 'utf8')) : {};
@@ -282,6 +286,16 @@ function talkItem(t) {
 </li>`;
 }
 
+function postItem(b, prefix = 'blog/') {
+  return `<li class="talk">
+  <div class="talk-date">${esc(b.date.label)}</div>
+  <div>
+    <h3><a href="${prefix}${b.slug}/">${esc(b.title)}</a></h3>
+    ${b.summary ? `<p>${mdInline(b.summary)}</p>` : ''}
+  </div>
+</li>`;
+}
+
 function cvList(items, kind) {
   return (items || [])
     .map((x) => {
@@ -319,7 +333,7 @@ const indexBody = `
 </header>
 
 <nav class="toc wrap" aria-label="Sections">
-  <a href="#about">About</a><a href="#publications">Publications</a><a href="#network">Network</a>${talks.length ? '<a href="#talks">Talks</a>' : ''}<a href="#cv">CV</a>
+  <a href="#about">About</a><a href="#publications">Publications</a><a href="#network">Network</a>${posts.length ? '<a href="#writing">Writing</a>' : ''}${talks.length ? '<a href="#talks">Talks</a>' : ''}<a href="#cv">CV</a>
 </nav>
 
 <main class="wrap">
@@ -348,6 +362,8 @@ const indexBody = `
         .join('')}</ul>
     </details>
   </section>
+
+  ${posts.length ? `<section id="writing"><h2>Writing</h2><ol class="talks">${posts.slice(0, 3).map((b) => postItem(b)).join('\n')}</ol>${posts.length > 3 ? `<p><a href="blog/">All ${posts.length} posts →</a></p>` : ''}</section>` : ''}
 
   ${talks.length ? `<section id="talks"><h2>Talks &amp; outreach</h2><ol class="talks">${talks.map(talkItem).join('\n')}</ol></section>` : ''}
 
@@ -419,6 +435,41 @@ document.querySelectorAll('[data-copy]').forEach(function (b) {
   });
 }
 
+function postPage(b) {
+  const body = `
+<header class="page-head wrap">
+  <a class="back" href="../../#writing">← ${esc(profile.name)}</a>
+  <div class="pub-meta"><span>${esc(b.date.label)}</span></div>
+  <h1>${esc(b.title)}</h1>
+</header>
+<main class="wrap post-page">
+  <article class="prose">
+    ${b.summary ? `<p class="lede">${mdInline(b.summary)}</p>` : ''}
+    ${md(b.body)}
+  </article>
+  <p><a class="back" href="../">All posts</a></p>
+</main>
+`;
+  return layout({
+    title: `${b.title} — ${profile.name}`,
+    description: b.summary ? b.summary.replace(/[*_`[\]]/g, '') : description,
+    body,
+    canonical: `/blog/${b.slug}/`,
+    depth: 2,
+  });
+}
+
+function blogIndex() {
+  const body = `
+<header class="page-head wrap">
+  <a class="back" href="../">← ${esc(profile.name)}</a>
+  <h1>Writing</h1>
+</header>
+<main class="wrap post-page"><ol class="talks">${posts.map((b) => postItem(b, '')).join('\n')}</ol></main>
+`;
+  return layout({ title: `Writing — ${profile.name}`, description, body, canonical: '/blog/', depth: 1 });
+}
+
 // ---------- write ----------
 
 fs.rmSync(DIST, { recursive: true, force: true });
@@ -427,6 +478,10 @@ copyDir(PUBLIC, DIST);
 copyDir(SRC, DIST);
 write('index.html', layout({ title: `${profile.name} — ${profile.title || 'Research'}`, description, body: indexBody, canonical: '/' }));
 for (const p of publications) write(`publications/${p.slug}/index.html`, pubPage(p));
+if (posts.length) {
+  write('blog/index.html', blogIndex());
+  for (const b of posts) write(`blog/${b.slug}/index.html`, postPage(b));
+}
 write('network.json', JSON.stringify(network));
 write(
   'robots.txt',
@@ -434,9 +489,9 @@ write(
 );
 write(
   'sitemap.xml',
-  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${['/', ...publications.map((p) => `/publications/${p.slug}/`)]
+  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${['/', ...publications.map((p) => `/publications/${p.slug}/`), ...(posts.length ? ['/blog/', ...posts.map((b) => `/blog/${b.slug}/`)] : [])]
     .map((u) => `  <url><loc>${SITE_URL}${u}</loc></url>`)
     .join('\n')}\n</urlset>\n`
 );
 
-console.log(`Built ${publications.length} publications, ${talks.length} talks, ${coauthorCount} co-authors -> dist/`);
+console.log(`Built ${publications.length} publications, ${talks.length} talks, ${posts.length} posts, ${coauthorCount} co-authors -> dist/`);

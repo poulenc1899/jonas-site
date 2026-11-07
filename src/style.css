@@ -180,6 +180,7 @@ main section { padding: 3rem 0 1rem; scroll-margin-top: 3rem; }
 .page-head h1 { font-size: 2rem; margin: 0.6rem 0; }
 .page-head .pub-meta { margin-top: 1.5rem; }
 .pub-page { display: grid; grid-template-columns: 1fr 16rem; gap: 3rem; padding-top: 2rem; padding-bottom: 3rem; }
+.post-page { padding-top: 2rem; padding-bottom: 3rem; }
 .lede { font-family: var(--serif); font-size: 1.2rem; line-height: 1.5; }
 .pub-aside h2 { font-family: var(--sans); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0 0 0.6rem; }
 .pub-aside h2:not(:first-child) { margin-top: 1.75rem; }

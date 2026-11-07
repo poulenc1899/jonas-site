@@ -153,6 +153,39 @@ content:
           format: markdown
           media: images
 
+  - name: posts
+    label: Blog posts
+    type: collection
+    path: content/posts
+    filename: "{year}-{fields.title}.md"
+    view:
+      fields: [title, date]
+      primary: title
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        type: string
+        required: true
+      - name: date
+        description: YYYY-MM-DD.
+        type: string
+        required: true
+      - name: summary
+        label: One-line summary
+        description: Shown in the list of posts and when the link is shared.
+        type: text
+      - name: draft
+        label: Draft (hidden from the site)
+        type: boolean
+      - name: body
+        label: Post
+        type: rich-text
+        options:
+          format: markdown
+          media: images
+
   - name: profile
     label: Profile & CV
     type: file

@@ -18,6 +18,14 @@ Jonas's academic page: profile, publications (each with its own page for context
 - **Downloads**: upload PDFs, slides, posters or supplementary data. They're served from `/files/…`.
 - Tick **Draft** to hide something while you work on it.
 
+### Blog posts
+
+Under **Blog posts**, add an entry with a title, date, one-line summary and the post itself (images can be dropped in). A *Writing* section appears on the homepage (latest three posts) along with a page listing every post at `/blog/` as soon as the first non-draft post is saved.
+
+### Changing the layout or design
+
+Layout and design live in code (`build.mjs` for the page structure, `src/style.css` for colours, fonts and spacing). The easiest way to change them is to ask Claude at **https://claude.ai/code**: pick this repository and describe what you want. Ask it to show you a preview before it saves.
+
 ### Dates
 
 Use `YYYY-MM-DD`, or `YYYY-MM` / `YYYY` if you don't know the exact day.
