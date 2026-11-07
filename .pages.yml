@@ -1,0 +1,238 @@
+# Pages CMS (https://pagescms.org) — a friendly editor for Jonas's academic page
+# (jonas.bergmann-rowe.com). Every save is a commit to this repo; Vercel then
+# rebuilds and publishes the site automatically.
+
+media:
+  - name: files
+    label: Downloads (PDFs, slides, posters, data)
+    input: public/files
+    output: /files
+    rename: safe
+  - name: images
+    label: Images
+    input: public/images
+    output: /images
+    categories: [image]
+    rename: safe
+
+content:
+  - name: publications
+    label: Publications
+    type: collection
+    path: content/publications
+    filename: "{fields.short_title}.md"
+    view:
+      fields: [title, type, date]
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Full title
+        type: string
+        required: true
+      - name: short_title
+        label: Short title
+        description: Used as the label in the network diagram and as the page address, e.g. "Screenathon 2.0".
+        type: string
+        required: true
+      - name: type
+        label: Type
+        type: select
+        options:
+          values: [Journal article, Preprint, Book chapter, Conference paper, Poster, Dataset, Report, Thesis, Other]
+      - name: date
+        label: Publication date
+        description: YYYY-MM-DD, or just YYYY-MM or YYYY if that's all you know.
+        type: string
+        required: true
+      - name: venue
+        label: Journal / venue
+        type: string
+      - name: doi
+        label: DOI
+        description: e.g. 10.1038/s41598-026-45385-5 — with a DOI, co-authors, their ORCIDs and the citation are filled in automatically.
+        type: string
+      - name: url
+        label: Web address (only if there is no DOI)
+        type: string
+      - name: open_access
+        label: Open access
+        type: boolean
+      - name: summary
+        label: One-line summary
+        description: Shown in the publication list.
+        type: text
+      - name: authors
+        label: Authors (optional)
+        description: Leave empty to use the author list from the DOI. Fill in for items without a DOI, or to fix a name.
+        type: object
+        list: true
+        fields:
+          - name: name
+            type: string
+          - name: orcid
+            label: ORCID iD
+            type: string
+      - name: files
+        label: Downloads
+        description: Upload PDFs, slides, posters or supplementary material.
+        type: object
+        list: true
+        fields:
+          - name: label
+            type: string
+          - name: file
+            type: file
+            options:
+              media: files
+      - name: links
+        label: Extra links
+        description: Preregistration, code, data, press coverage, …
+        type: object
+        list: true
+        fields:
+          - name: label
+            type: string
+          - name: url
+            type: string
+      - name: network
+        label: Show in co-author network
+        type: boolean
+        default: true
+      - name: draft
+        label: Draft (hidden from the site)
+        type: boolean
+      - name: body
+        label: Context
+        description: The story behind the paper — what you did, what you found, why it matters.
+        type: rich-text
+        options:
+          format: markdown
+          media: images
+
+  - name: talks
+    label: Talks & outreach
+    type: collection
+    path: content/talks
+    filename: "{year}-{fields.title}.md"
+    view:
+      fields: [title, event, date]
+      primary: title
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        type: string
+        required: true
+      - name: type
+        type: select
+        options:
+          values: [Talk, Workshop, Poster, Guest lecture, Panel, Article, Interview, Other]
+      - name: event
+        type: string
+      - name: location
+        type: string
+      - name: date
+        description: YYYY-MM-DD, YYYY-MM or YYYY.
+        type: string
+        required: true
+      - name: url
+        label: Link
+        type: string
+      - name: draft
+        label: Draft (hidden from the site)
+        type: boolean
+      - name: body
+        label: Description
+        type: rich-text
+        options:
+          format: markdown
+          media: images
+
+  - name: profile
+    label: Profile & CV
+    type: file
+    path: content/profile.md
+    fields:
+      - name: name
+        type: string
+      - name: pronouns
+        type: string
+      - name: title
+        label: Headline
+        type: string
+      - name: tagline
+        label: Search/social description
+        type: text
+      - name: hide_from_search
+        label: Hide from Google & other search engines
+        type: boolean
+      - name: affiliations
+        type: string
+        list: true
+      - name: photo
+        type: image
+        options:
+          media: images
+      - name: orcid
+        label: ORCID iD
+        type: string
+      - name: linkedin
+        label: LinkedIn URL
+        type: string
+      - name: email
+        label: Public email (optional)
+        type: string
+      - name: also_published_as
+        label: Also published as
+        type: string
+        list: true
+      - name: links
+        label: Other profile links
+        type: object
+        list: true
+        fields:
+          - name: label
+            type: string
+          - name: url
+            type: string
+      - name: interests
+        label: Research interests
+        type: string
+        list: true
+      - name: positions
+        type: object
+        list: true
+        fields:
+          - { name: role, type: string }
+          - { name: org, label: Organisation, type: string }
+          - { name: dept, label: Department, type: string }
+          - { name: start, type: string }
+          - { name: end, description: Leave empty for "present", type: string }
+          - { name: note, type: text }
+      - name: education
+        type: object
+        list: true
+        fields:
+          - { name: degree, type: string }
+          - { name: org, label: Institution, type: string }
+          - { name: start, type: string }
+          - { name: end, type: string }
+          - { name: note, type: text }
+      - name: memberships
+        type: object
+        list: true
+        fields:
+          - { name: role, type: string }
+          - { name: org, label: Organisation, type: string }
+          - { name: start, type: string }
+          - { name: end, type: string }
+      - name: body
+        label: About
+        type: rich-text
+        options:
+          format: markdown

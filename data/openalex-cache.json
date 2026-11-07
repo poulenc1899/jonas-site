@@ -1,0 +1,306 @@
+{
+  "10.5117/mem2026.3.004.berg": {
+    "authors": [
+      {
+        "name": "Jonas Bergmann",
+        "orcid": null,
+        "institution": "University of Amsterdam"
+      },
+      {
+        "name": "L. van den Berg",
+        "orcid": "0000-0002-5586-731X",
+        "institution": "University of Groningen"
+      }
+    ],
+    "title": "Positief blijven: psychosociale en sociaaleconomische determinanten van psychiatrische morbiditeit bij Nederlandse jongvolwassenen die leven met hiv",
+    "citation": "Bergmann, J., & van den Berg, L. (2026). Positief blijven: psychosociale en sociaaleconomische determinanten van psychiatrische morbiditeit bij Nederlandse jongvolwassenen die leven met hiv. Mens &Amp; Maatschappij, 101(3), 243–280. https://doi.org/10.5117/mem2026.3.004.berg"
+  },
+  "10.1038/s41598-026-45385-5": {
+    "authors": [
+      {
+        "name": "John G. Bergmann",
+        "orcid": "0009-0007-9881-7893",
+        "institution": "Utrecht University"
+      },
+      {
+        "name": "Tiago de Souza Azzi",
+        "orcid": "0009-0009-9314-1067",
+        "institution": "Utrecht University"
+      },
+      {
+        "name": "Rutger Chris Neeleman",
+        "orcid": "0009-0005-3824-8727",
+        "institution": "Utrecht University"
+      },
+      {
+        "name": "Kianush Monschau",
+        "orcid": "0009-0007-3368-2457",
+        "institution": "Utrecht University"
+      },
+      {
+        "name": "Berke Yazan",
+        "orcid": "0009-0003-2610-9354",
+        "institution": "Utrecht University"
+      },
+      {
+        "name": "Elena Jalsovec",
+        "orcid": "0009-0006-7315-5494",
+        "institution": "Utrecht University"
+      },
+      {
+        "name": "Emily Westerbeek",
+        "orcid": "0009-0001-6664-8833",
+        "institution": "Utrecht University"
+      },
+      {
+        "name": "Felix Weijdema",
+        "orcid": "0000-0001-5150-1102",
+        "institution": "Utrecht University"
+      },
+      {
+        "name": "Jonathan De Bruin",
+        "orcid": "0000-0002-4297-0502",
+        "institution": "Utrecht University"
+      },
+      {
+        "name": "Qixiang Fang",
+        "orcid": "0000-0003-2689-6653",
+        "institution": "Utrecht University"
+      },
+      {
+        "name": "Rens van de Schoot",
+        "orcid": "0000-0001-7736-2091",
+        "institution": "Utrecht University"
+      }
+    ],
+    "title": "Screenathon 2.0: human–AI collaborative screening applied to patient-generated health data",
+    "citation": "Bergmann, J., Azzi, T., Neeleman, R., Monschau, K., Yazan, B., Jalsovec, E., Westerbeek, E., Weijdema, F., de Bruin, J., Fang, Q., & van de Schoot, R. (2026). Screenathon 2.0: human–AI collaborative screening applied to patient-generated health data. Scientific Reports, 16(1). https://doi.org/10.1038/s41598-026-45385-5"
+  },
+  "10.31234/osf.io/zg3sw_v1": {
+    "authors": [
+      {
+        "name": "Kianush Monschau",
+        "orcid": "0009-0007-3368-2457",
+        "institution": null
+      },
+      {
+        "name": "Emily Westerbeek",
+        "orcid": "0009-0001-6664-8833",
+        "institution": null
+      },
+      {
+        "name": "Qixiang Fang",
+        "orcid": "0000-0003-2689-6653",
+        "institution": null
+      },
+      {
+        "name": "Jonas Bergmann",
+        "orcid": "0009-0007-9881-7893",
+        "institution": null
+      },
+      {
+        "name": "Giuseppe Fico",
+        "orcid": "0000-0003-1551-4613",
+        "institution": null
+      },
+      {
+        "name": "Manuel Ottaviano",
+        "orcid": "0000-0003-0002-4988",
+        "institution": null
+      },
+      {
+        "name": "Liss Hernández",
+        "orcid": "0000-0001-9805-7707",
+        "institution": null
+      },
+      {
+        "name": "Hans Peeters",
+        "orcid": null,
+        "institution": null
+      },
+      {
+        "name": "Ernst Hermens",
+        "orcid": null,
+        "institution": null
+      },
+      {
+        "name": "Davide Guerri",
+        "orcid": "0000-0003-2846-8695",
+        "institution": null
+      },
+      {
+        "name": "Frans Folkvord",
+        "orcid": "0000-0001-7602-3792",
+        "institution": null
+      },
+      {
+        "name": "Linwei He",
+        "orcid": "0000-0002-6593-1661",
+        "institution": null
+      },
+      {
+        "name": "Áron Szpisják",
+        "orcid": null,
+        "institution": null
+      },
+      {
+        "name": "Jordi Piera-Jiménez",
+        "orcid": "0000-0001-6471-9979",
+        "institution": null
+      },
+      {
+        "name": "Caridad Pontes",
+        "orcid": "0000-0002-3274-6048",
+        "institution": null
+      },
+      {
+        "name": "Marina Ramiro‐Pareta",
+        "orcid": "0000-0002-9017-4981",
+        "institution": null
+      },
+      {
+        "name": "Alba Jiménez-Rueda",
+        "orcid": "0009-0008-2286-8384",
+        "institution": null
+      },
+      {
+        "name": "Janez Bernik",
+        "orcid": null,
+        "institution": null
+      },
+      {
+        "name": "Claudia Navarro",
+        "orcid": null,
+        "institution": null
+      },
+      {
+        "name": "Eva Turk",
+        "orcid": "0000-0001-6017-0624",
+        "institution": null
+      },
+      {
+        "name": "Adrian Quesada",
+        "orcid": null,
+        "institution": null
+      },
+      {
+        "name": "Lutz Peschke",
+        "orcid": "0000-0002-9513-3257",
+        "institution": null
+      },
+      {
+        "name": "Laura Pinna",
+        "orcid": null,
+        "institution": null
+      },
+      {
+        "name": "Carmela Genovese",
+        "orcid": null,
+        "institution": null
+      },
+      {
+        "name": "Franco Chiarugi",
+        "orcid": null,
+        "institution": null
+      },
+      {
+        "name": "Laia Juan",
+        "orcid": null,
+        "institution": null
+      },
+      {
+        "name": "Eva Podovšovnik",
+        "orcid": "0000-0001-7449-7038",
+        "institution": null
+      },
+      {
+        "name": "Kathrin Scheckenbach",
+        "orcid": "0000-0002-2899-4487",
+        "institution": null
+      },
+      {
+        "name": "Martin Wagenmann",
+        "orcid": null,
+        "institution": null
+      },
+      {
+        "name": "Martin Ernst",
+        "orcid": null,
+        "institution": null
+      },
+      {
+        "name": "Rens van de Schoot",
+        "orcid": "0000-0001-7736-2091",
+        "institution": null
+      }
+    ],
+    "title": "Data from the IMPROVE Project: Labelling Decisions and Metadata from an Umbrella Review on Patient-Generated Health Data in Digital Health",
+    "citation": "Monschau, K., Westerbeek, E., Fang, Q., Bergmann, J., Fico, G., Ottaviano, M., Hernandez, L., Peeters, H., Hermens, E., Guerri, D., Folkvord, F., He, L., Szpisják, Á., Piera-Jiménez, J., García, C. P., Ramiro-Pareta, M., Jimenez-Rueda, A., Bernik, J., Navarro, C., et al. (2025). Data from the IMPROVE Project: Labelling Decisions and Metadata from an Umbrella Review on Patient-Generated Health Data in Digital Health. https://doi.org/10.31234/osf.io/zg3sw_v1"
+  },
+  "10.2139/ssrn.5699967": {
+    "authors": [
+      {
+        "name": "Gerbrand Koren",
+        "orcid": null,
+        "institution": "Utrecht University"
+      },
+      {
+        "name": "Erica Alonso",
+        "orcid": null,
+        "institution": "Erasmus University Rotterdam"
+      },
+      {
+        "name": "Jonas Bergmann",
+        "orcid": "0000-0001-8939-4779",
+        "institution": "University Medical Center Utrecht"
+      },
+      {
+        "name": "Bregje van der Bolt",
+        "orcid": "0000-0002-5601-8475",
+        "institution": "Wageningen University & Research"
+      },
+      {
+        "name": "Michelle G. J. L. Habets",
+        "orcid": "0009-0008-2595-8975",
+        "institution": "Wageningen University & Research"
+      },
+      {
+        "name": "Min Li",
+        "orcid": "0000-0002-5773-8976",
+        "institution": "Delft University of Technology"
+      },
+      {
+        "name": "Isabelle Pirson",
+        "orcid": null,
+        "institution": "Leiden University Medical Center"
+      },
+      {
+        "name": "Ripalta Stabile",
+        "orcid": null,
+        "institution": "Eindhoven University of Technology"
+      },
+      {
+        "name": "Frank G. van Steenbeek",
+        "orcid": "0000-0001-5460-6540",
+        "institution": "Utrecht University"
+      },
+      {
+        "name": "Mark G. Sterken",
+        "orcid": "0000-0001-7119-6213",
+        "institution": "Wageningen University & Research"
+      },
+      {
+        "name": "Nina van der Wilt",
+        "orcid": null,
+        "institution": "University Medical Center Utrecht"
+      },
+      {
+        "name": "Terry Vrijenhoek",
+        "orcid": null,
+        "institution": "University Medical Center Utrecht"
+      }
+    ],
+    "title": "Signals from the future: An interdisciplinary engagement to early warning signals",
+    "citation": "van der Bolt, B., Bergmann, J., Alonso, E., van Steenbeek, F., Koren, G., Pirson, I., Sterken, M., Habets, M., Li, M. M., van der Wilt, N., Stabile, R., & Vrijenhoek, T. (2025). Signals from the Future An Interdisciplinary Engagement to Early Warning Signals. https://doi.org/10.2139/ssrn.5699967"
+  }
+}
