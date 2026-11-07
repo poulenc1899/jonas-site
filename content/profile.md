@@ -20,23 +20,23 @@ positions:
   - role: Research Assistant (internship)
     org: Chelsea and Westminster Hospital NHS Foundation Trust
     dept: 56 Dean Street, London
-    start: Incoming
-    note: Research placement on mental health and chemsex in sexual health services. Supervised by Dr. Gary Whitlock.
+    start: "2026"
+    note: Research placement on mental health in HIV care. Supervised by Dr. Gary Whitlock.
   - role: Research Assistant (internship)
     org: King's College London
     dept: Psychiatry PGT, Faculty of Life Sciences & Medicine
-    start: Incoming
-    note: Data analysis and study coordination. Supervised by Tiffany Gooden.
+    start: "2026"
+    note: Research on chemsex and HIV, including data analysis and study coordination. Supervised by Tiffany Gooden.
   - role: Teaching Assistant
     org: Utrecht University
     dept: Department of Psychology
     start: Sep 2026
-    note: Integrative Practicum I – Research Skills (programming and analysing research paradigms in R) and Multivariate Statistics in Practice for Social & Health Psychology (ANOVA, repeated measures, multivariate linear and logistic regression, power analysis and Bayesian model selection).
+    note: "Integrative Practicum I: Research Skills (programming and analysing research paradigms in R) and Multivariate Statistics in Practice for Social & Health Psychology (ANOVA, repeated measures, multivariate linear and logistic regression, power analysis and Bayesian model selection)."
   - role: Research Intern
     org: UMC Utrecht
     dept: Department of Brain & Psychiatry
     start: Feb 2026
-    note: Mixed-methods evaluation of Intensive Home Treatment for Youth (IHT-J) — combining clinical and service data with interviews with young people and parents, to inform patient-centred crisis care and prevent (re)admissions. Supervised by Dr. Margo Faay.
+    note: Mixed-methods evaluation of Intensive Home Treatment for Youth (IHT-J), combining clinical and service data with interviews with young people and parents, to inform patient-centred crisis care and prevent (re)admissions. Supervised by Dr. Margo Faay.
   - role: Research Assistant (internship)
     org: MenAsWell
     dept: Amsterdam
@@ -51,13 +51,13 @@ positions:
     org: Utrecht University
     dept: Department of Methodology & Statistics
     start: Dec 2024
-    note: ASReview team on the EU-funded IHI IMPROVE project — AI-assisted systematic reviewing of ~42,000 articles on patient-generated health data, building an open-access evidence database for early disease detection in cardiovascular disease, oncology, ophthalmology and neurology. Supervised by Prof. Dr. Rens van de Schoot.
+    note: Leading Work Package 2 of the EU-funded IHI IMPROVE project with the ASReview team, spanning academia and industry. AI-assisted systematic reviewing of ~42,000 articles on patient-generated health data, building an open-access evidence database across 11 disease areas, including cardiology, neurology and ophthalmology. Supervised by Prof. Dr. Rens van de Schoot.
   - role: Research Assistant & Project Coordinator
     org: UMC Utrecht
     dept: Department of Genetics
     start: Sep 2025
     end: Feb 2026
-    note: Better Wave than Worry — an interdisciplinary community on early warning signals, with partners at Wageningen University, TU Eindhoven and Utrecht University. Coordinated a position paper, workshops and grant writing. Supervised by Dr. Terry Vrijenhoek.
+    note: Better Wave than Worry, an interdisciplinary community on early warning signals, with partners at Wageningen University, TU Eindhoven and Utrecht University. Coordinated a position paper, workshops and grant writing. Supervised by Dr. Terry Vrijenhoek.
   - role: Residential Intern
     org: Samyak Mental Healthcare, Rehabilitation and Deaddiction Hospital
     dept: Pune, India
@@ -92,7 +92,7 @@ I'm a researcher in medical psychology working at the intersection of social psy
 
 At Utrecht University I coordinate the HPA (Hormonal Pain Anticipation) project, which looks at how hormonal fluctuations across the menstrual cycle relate to symptomatology and psychiatric vulnerability. At UMC Utrecht I'm evaluating Intensive Home Treatment for young people in acute psychiatric crisis, combining clinical data with the experiences of young people and their families.
 
-In London I'm starting two research placements. At King's College London's Faculty of Life Sciences & Medicine I'll work on chemsex and HIV, and at 56 Dean Street, part of Chelsea and Westminster Hospital NHS Foundation Trust, I'll focus on mental health in HIV care.
+I am currently doing two research placements in London. At King's College London's Faculty of Life Sciences & Medicine I work on chemsex and HIV, and at 56 Dean Street, part of Chelsea and Westminster Hospital NHS Foundation Trust, I focus on mental health in HIV care.
 
 My community health work began as a residential intern at Samyak, a psychiatric and addiction hospital in Pune, India, where I supported inpatient and outpatient care and led psychoeducation workshops. At MenAsWell in Amsterdam I research psychosocial interventions for survivors of sexual and intimate-partner violence.
 
