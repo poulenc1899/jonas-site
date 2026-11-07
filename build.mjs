@@ -299,7 +299,8 @@ function postItem(b, prefix = 'blog/') {
 function cvList(items, kind) {
   return (items || [])
     .map((x) => {
-      const when = [x.start, x.end || (kind === 'positions' ? 'present' : '')].filter(Boolean).join(' – ');
+      const upcoming = /^(incoming|upcoming)$/i.test(String(x.start || ''));
+      const when = upcoming || (x.end && x.end === x.start) ? x.start : [x.start, x.end || (kind === 'positions' ? 'present' : '')].filter(Boolean).join(' – ');
       return `<li><div class="cv-when">${esc(when)}</div><div><strong>${esc(x.role || x.degree)}</strong><br /><span class="muted">${esc([x.org, x.dept].filter(Boolean).join(', '))}</span>${x.note ? `<p>${mdInline(x.note)}</p>` : ''}</div></li>`;
     })
     .join('\n');
@@ -333,7 +334,7 @@ const indexBody = `
 </header>
 
 <nav class="toc wrap" aria-label="Sections">
-  <a href="#about">About</a><a href="#publications">Publications</a><a href="#network">Network</a>${posts.length ? '<a href="#writing">Writing</a>' : ''}${talks.length ? '<a href="#talks">Talks</a>' : ''}<a href="#cv">CV</a>
+  <a href="#about">About</a><a href="#publications">Publications</a><a href="#network">Network</a><a href="#writing">Writing</a>${talks.length ? '<a href="#talks">Talks</a>' : ''}<a href="#cv">CV</a>
 </nav>
 
 <main class="wrap">
@@ -363,7 +364,7 @@ const indexBody = `
     </details>
   </section>
 
-  ${posts.length ? `<section id="writing"><h2>Writing</h2><ol class="talks">${posts.slice(0, 3).map((b) => postItem(b)).join('\n')}</ol>${posts.length > 3 ? `<p><a href="blog/">All ${posts.length} posts →</a></p>` : ''}</section>` : ''}
+  <section id="writing"><h2>Writing</h2>${posts.length ? `<ol class="talks">${posts.slice(0, 3).map((b) => postItem(b)).join('\n')}</ol>${posts.length > 3 ? `<p><a href="blog/">All ${posts.length} posts →</a></p>` : ''}` : '<p class="muted">New posts coming soon.</p>'}</section>
 
   ${talks.length ? `<section id="talks"><h2>Talks &amp; outreach</h2><ol class="talks">${talks.map(talkItem).join('\n')}</ol></section>` : ''}
 
